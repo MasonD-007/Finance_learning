@@ -1,0 +1,6 @@
+
+11/12
+- Initialize the Login page and the Userpage page
+- Initialize Firebase in the React app
+- Initialize the React jsx app
+- Created a Github repo for the project
