@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Homepage } from './pages/Homepage'
+import { Userpage } from './pages/Userpage'
+import { Login } from './pages/Login'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
@@ -8,12 +9,8 @@ function App() {
   return (
     <>
       <Router>
-        <Homepage />
+        <Userpage />
       </Router>
-      <div className="App">
-        <p>Count: {count}</p>
-        <button onClick={() => setCount(count + 1)}>Increment</button>
-      </div>
     </>
   )
 }
