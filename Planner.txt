@@ -1,5 +1,8 @@
 
 11/12
+- Created they style file for the website
+- Added html and functions to the Login page
+- Created AuthContext to handle user authentication
 - Initialize the Login page and the Userpage page
 - Initialize Firebase in the React app
 - Initialize the React jsx app
