@@ -1,4 +1,9 @@
 
+11/15
+- Initialize components for the Userpage
+- Initialize firebase storage 
+- Added html and functionality to the Register page
+
 11/12
 - Initialize the Register page
 - Created they style file for the website

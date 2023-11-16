@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { Userpage } from './pages/Userpage'
 import { Login } from './pages/Login'
+import { Regester } from './pages/Regester'
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import { AuthContext } from './Context/AuthContext'
 import './style.scss';
@@ -26,6 +27,7 @@ function App() {
             </ProtectedRoute>
           } />
           <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Regester />} />
         </Routes>
       </Router>
     </>
