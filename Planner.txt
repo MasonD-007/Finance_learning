@@ -1,5 +1,7 @@
 
 11/15
+- Added Google button and styling
+- Initialize Google authentication
 - Initialize components for the Userpage
 - Initialize firebase storage 
 - Added html and functionality to the Register page

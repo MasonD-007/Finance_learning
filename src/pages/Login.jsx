@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate, Link } from 'react-router-dom';
-import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebase';
+import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
+import { auth, Gprovider } from '../firebase';
 
 export const Login = () => {
 const navigate = useNavigate();
@@ -23,6 +23,21 @@ const navigate = useNavigate();
 
   }
 
+  const handleGoogle = async () => {
+    try {
+      await signInWithPopup(auth, Gprovider)
+      .then((result) => {
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        const user = result.user;
+      })
+      console.log('Login successful');
+      navigate('/');
+    } catch(error) {
+      console.log(error);
+      return alert("Something went wrong")
+    };
+  }
 
   return (
     <div className='formContainer'>
@@ -34,6 +49,8 @@ const navigate = useNavigate();
                 <input type='password' placeholder='Password' />
                 <button>Login</button>
             </form>
+            <p>Or</p>
+            <button id='GoogleButton' onClick={handleGoogle}>Sign in with Google</button>
             <p>Don't have an account? <Link to='/register'>Register</Link></p>
         </div>
     </div>

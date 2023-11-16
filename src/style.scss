@@ -60,6 +60,20 @@
             font-size: 12px;
             margin-top: 10px;
         }
+
+        #GoogleButton {
+            background-color: #7b96ec;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
     }
 
     .registerPage {
