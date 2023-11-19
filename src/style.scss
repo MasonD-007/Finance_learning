@@ -130,10 +130,55 @@
             margin-top: 10px;
         }
     }
-
-    .homePage {
-        background-color: lightblue;
-    }
-
+}
+.homePage {
+    background-color: lightblue;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     
+    .container{
+        display: flex;
+        position: relative;
+        width: 99%;
+        height: 99%;
+        .guideColumn{
+            flex: 1;
+            background-color: #4a4a4b;
+            position: relative;
+            p {
+                color: white;
+            }
+            #bottomPage {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                gap: 10px;
+                p {
+                    color: white;
+                    font-size: 12px;
+                }
+                #logoutButton {
+                    background-color: gray;
+                    color: white;
+                    font-weight: bold;
+                    border: none;
+                    cursor: pointer;
+                }
+            
+            }
+        }
+        .mainHome{
+            flex: 2;
+            background-color: pink;
+            position: relative;
+            color: gray;
+        }
+    }
 }

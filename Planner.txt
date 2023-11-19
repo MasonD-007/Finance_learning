@@ -1,4 +1,9 @@
 
+11/17
+- 
+- Added temporary styling to the Userpage
+- Initialize the search bar in GuideColumn
+
 11/15
 - Added Google button and styling
 - Initialize Google authentication
