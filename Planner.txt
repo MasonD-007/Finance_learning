@@ -1,6 +1,8 @@
 
+11/25
+- Able to sign out of the homePage
+
 11/17
-- 
 - Added temporary styling to the Userpage
 - Initialize the search bar in GuideColumn
 
