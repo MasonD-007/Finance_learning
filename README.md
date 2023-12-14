@@ -1,8 +1,25 @@
-# React + Vite
+# Finance_Learning
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React application that uses Firebase for authentication and storage. The application is set up with Vite for a faster and leaner development experience and is styled with SCSS.
 
-Currently, two official plugins are available:
+## Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `src/App.jsx`: The main component that sets up the routing for the application.
+- `src/Context/AuthContext.jsx`: Manages the authentication state across the application.
+- `src/components/`: Contains reusable components like `GuideColumn`, `Mainhome`, and `SearchBar`.
+- `src/pages/`: Contains different pages of the application like `Login`, `Register`, and `Userpage`.
+- `src/firebase.jsx`: Contains Firebase configuration and initialization.
+
+## Installation
+
+1. Clone the repository
+2. Install the dependencies with `npm install`
+3. Start the development server with `npm run dev`
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
